@@ -1,0 +1,213 @@
+/* =========================================================
+   KABIR SHAHNAWAZ - CYBERPUNK DARK THEME (FIXED HEADING)
+   ========================================================= */
+
+:root {
+    --bg-main: #050811;
+    --card-bg: rgba(15, 23, 42, 0.75);
+    --border-color: rgba(56, 189, 248, 0.2);
+    --border-hover: rgba(56, 189, 248, 0.6);
+    --text-primary: #f8fafc;
+    --text-secondary: #94a3b8;
+    --accent-blue: #38bdf8;
+    --accent-teal: #2dd4bf;
+}
+
+/* BASE STYLES - Clean Typography */
+body.dark-theme {
+    background-color: var(--bg-main);
+    color: var(--text-primary);
+    font-family: 'Inter', system-ui, -apple-system, sans-serif !important;
+    line-height: 1.6;
+}
+
+h1, h2, h3, h4, .brand-logo, .section-tag {
+    font-family: 'Inter', system-ui, -apple-system, sans-serif !important;
+    letter-spacing: -0.5px !important;
+}
+
+/* TEXT GRADIENT */
+.text-gradient {
+    background: linear-gradient(135deg, var(--accent-blue) 0%, var(--accent-teal) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* NAVBAR */
+.header-nav {
+    background-color: rgba(5, 8, 17, 0.85);
+    backdrop-filter: blur(12px);
+    border-bottom: 1px solid var(--border-color);
+}
+
+.brand-logo {
+    font-size: 1.4rem;
+    font-weight: 800;
+    color: var(--text-primary);
+    text-decoration: none;
+    letter-spacing: 0.5px !important;
+}
+
+.btn-hire-sm {
+    color: var(--accent-blue);
+    border: 1px solid var(--border-color);
+    padding: 6px 16px;
+    border-radius: 20px;
+    text-decoration: none;
+    font-size: 0.9rem;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.btn-hire-sm:hover {
+    background: rgba(56, 189, 248, 0.1);
+    border-color: var(--accent-blue);
+    color: #ffffff;
+}
+
+/* HERO SECTION - Heading Fix */
+.hero-title {
+    font-size: clamp(1.8rem, 4vw, 3rem) !important;
+    font-weight: 800 !important;
+    line-height: 1.25 !important;
+    letter-spacing: -1px !important;
+}
+
+.hero-subtitle {
+    color: var(--text-secondary);
+    font-size: 1.05rem;
+    max-width: 650px;
+}
+
+.status-pill {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: rgba(56, 189, 248, 0.08);
+    border: 1px solid var(--border-color);
+    color: var(--accent-blue);
+    padding: 6px 18px;
+    border-radius: 30px;
+    font-size: 0.88rem;
+    font-weight: 600;
+}
+
+.pulse-dot {
+    width: 8px;
+    height: 8px;
+    background-color: var(--accent-teal);
+    border-radius: 50%;
+    box-shadow: 0 0 10px var(--accent-teal);
+}
+
+/* BUTTONS */
+.btn-primary-custom {
+    background: linear-gradient(135deg, var(--accent-blue) 0%, var(--accent-teal) 100%);
+    color: #030712;
+    font-weight: 700;
+    padding: 12px 28px;
+    border-radius: 12px;
+    text-decoration: none;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: inline-block;
+}
+
+.btn-primary-custom:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 25px rgba(56, 189, 248, 0.3);
+    color: #030712;
+}
+
+.btn-outline-custom {
+    background: transparent;
+    color: var(--text-primary);
+    border: 1px solid var(--border-color);
+    font-weight: 600;
+    padding: 12px 28px;
+    border-radius: 12px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    display: inline-block;
+}
+
+.btn-outline-custom:hover {
+    background: rgba(255, 255, 255, 0.05);
+    border-color: var(--accent-blue);
+    color: var(--accent-blue);
+}
+
+/* GLASSMORPHISM CARDS */
+.glass-card {
+    background: var(--card-bg);
+    border: 1px solid var(--border-color);
+    border-radius: 20px;
+    backdrop-filter: blur(10px);
+    transition: border-color 0.3s ease, transform 0.3s ease;
+}
+
+.glass-card:hover {
+    border-color: var(--border-hover);
+}
+
+.section-tag {
+    color: var(--accent-blue);
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.card-heading {
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+
+.card-text {
+    color: var(--text-secondary);
+    font-size: 1.02rem;
+}
+
+/* EXPERTISE LIST */
+.expertise-list li {
+    padding: 8px 0;
+    color: var(--text-primary);
+    font-weight: 500;
+}
+
+.experience-badge {
+    background: rgba(56, 189, 248, 0.06);
+    border: 1px dashed var(--border-color);
+}
+
+/* SKILL BOXES */
+.skill-box {
+    background: rgba(255, 255, 255, 0.02);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    transition: all 0.3s ease;
+}
+
+.skill-box:hover {
+    background: rgba(56, 189, 248, 0.05);
+    border-color: var(--border-color);
+    transform: translateY(-4px);
+}
+
+.skill-name {
+    color: var(--accent-blue);
+    font-size: 1.1rem;
+    font-weight: 700;
+}
+
+.skill-desc {
+    color: var(--text-secondary);
+    font-size: 0.88rem;
+}
+
+/* TIMELINE */
+.timeline-item {
+    border-left: 2px solid var(--accent-blue);
+    position: relative;
+}
+
+.contact-card {
+    background: linear-gradient(180deg, var(--card-bg) 0%, rgba(56, 189, 248, 0.05) 100%);
+}
